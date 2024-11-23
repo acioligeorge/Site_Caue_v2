@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -10,30 +9,39 @@
     <meta name="author" content="Caue Make Up & Hair">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.cauemakeupandhair.com/about.html">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.cauemakeupandhair.com/about.html">
     <meta property="og:title" content="Sobre - Caue Make Up & Hair">
     <meta property="og:description" content="Conheça a história e a experiência da Caue Make Up & Hair, especialistas em maquiagem e cabelo em Lisboa. Mais de 10 anos de excelência em serviços de beleza.">
     <meta property="og:image" content="https://www.cauemakeupandhair.com/assets/about-og-image.jpg">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.cauemakeupandhair.com/about.html">
     <meta property="twitter:title" content="Sobre - Caue Make Up & Hair">
     <meta property="twitter:description" content="Conheça a história e a experiência da Caue Make Up & Hair, especialistas em maquiagem e cabelo em Lisboa. Mais de 10 anos de excelência em serviços de beleza.">
     <meta property="twitter:image" content="https://www.cauemakeupandhair.com/assets/about-og-image.jpg">
-    <!-- Link para o Font Awesome -->
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Link para CSS -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <div class="menu-toggle">☰</div> <!-- Ícone de hamburger -->
+        <div class="menu-toggle">☰</div> <!-- Ícone de menu para mobile -->
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Sobre</a></li>
-                <li><img src="assets/logo.png" alt="logo" width=199px height=75% href="index.html"></li>
+                <li>
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="logo" width="199" height="75">
+                    </a>
+                </li>
                 <li><a href="projects.html">Projetos</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
@@ -44,23 +52,45 @@
         <section id="about" class="about">
             <h2>Sobre</h2>
             <p>Sobre a José Aparecido dos Santos, Unipessoal Lda</p>
-            <p>Com sede em Lisboa e mais de 10 anos de trajetória, a José Aparecido dos Santos, Unipessoal Lda, é uma empresa que se destaca na produção de conteúdos audiovisuais de excelência. 
-            Foi criada a sua empresa em 2014, acumulou um portfólio extenso, com mais de 600 participações em filmagens de alta qualidade, incluindo filmes, vídeos e programas de televisão, oferecendo ainda serviços especializados de caracterização e cabeleireiro.</p>
+            <p>
+                Com sede em Lisboa e mais de 10 anos de trajetória, a José Aparecido dos Santos, Unipessoal Lda, 
+                é uma empresa que se destaca na produção de conteúdos audiovisuais de excelência. Criada em 2014, 
+                acumulou um portfólio extenso, com mais de 600 participações em filmagens de alta qualidade, 
+                incluindo filmes, vídeos e programas de televisão, oferecendo ainda serviços especializados de caracterização e cabeleireiro.
+            </p>
 
-            <p>À frente desta marca está um profissional cuja história inspira perseverança e superação, dedicando-se à arte de transformar ideias em produções visualmente marcantes. A cada projeto, a José Aparecido dos Santos, Unipessoal Lda, reafirma o seu compromisso com a inovação e a excelência, sendo uma parceira confiável e criativa para clientes exigentes.</p>
+            <p>
+                À frente desta marca está um profissional cuja história inspira perseverança e superação, dedicando-se à arte de 
+                transformar ideias em produções visualmente marcantes. A cada projeto, a empresa reafirma o seu compromisso com a inovação 
+                e a excelência, sendo uma parceira confiável e criativa para clientes exigentes.
+            </p>
             
-            <p>Para conhecer mais sobre o trabalho e se inspirar nas criações já realizadas, convidamo-lo a explorar as redes sociais da empresa e descobrir o universo de possibilidades oferecidas pelo talento e dedicação do homem que lidera esta notável jornada.</p>
+            <p>
+                Para conhecer mais sobre o trabalho e se inspirar nas criações já realizadas, convidamo-lo a explorar as redes sociais da 
+                empresa e descobrir o universo de possibilidades oferecidas pelo talento e dedicação do homem que lidera esta notável jornada.
+            </p>
         </section>
     </main>
 
+    <!-- Seção Contato -->
     <footer>
-        <p>&copy; 2024 Caue Make Up & Hair by: <a href="https://www.instagram.com/acioliconsultoria">Acioli Consultoria</a></p>
-        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:cauemaqui@gmail.com">cauemaqui@gmail.com</a></p>
+        <p>&copy; 2024 Caue Make Up & Hair</p>
+        <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:cauemaqui@gmail.com">cauemaqui@gmail.com</a></p>
         <p><i class="fas fa-phone-alt"></i> Telefone: <a href="tel:+351123456789">+351 123456789</a></p>
         <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/cauemaqui">@cauemaqui</a></p>
         <p><i class="fab fa-vimeo-v"></i> Vimeo: <a href="https://vimeo.com/cauemaqui">@cauemaqui</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Script para menu mobile -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const menu = document.querySelector(".menu ul");
+
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
 </body>
 </html>
