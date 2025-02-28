@@ -35,7 +35,51 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Video Gallery
+    // Video Gallery Initialization
+    const videoGallery = document.querySelector('.video-gallery');
+    let currentPage = 1; // Track the current page for infinite scroll
+    const videosPerPage = 3; // Number of videos to load per page
+
+    function loadVideos(page) {
+        fetch(`path_to_your_video_api?page=${page}&limit=${videosPerPage}`)
+            .then(response => response.json())
+            .then(data => {
+                data.videos.forEach(video => {
+                    const videoItem = document.createElement('div');
+                    videoItem.classList.add('video-item');
+                    videoItem.setAttribute('data-video-id', video.id);
+                    videoItem.innerHTML = `
+                        <iframe src="https://player.vimeo.com/video/${video.id}" frameborder="0" allowfullscreen></iframe>
+                        <p>${video.description}</p>
+                    `;
+                    videoGallery.appendChild(videoItem);
+                });
+            })
+            .catch(error => console.error('Error loading videos:', error));
+    }
+
+    loadVideos(currentPage); // Initial load
+
+    window.addEventListener('scroll', () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            currentPage++;
+            loadVideos(currentPage); // Load more videos on scroll
+        }
+    });
+
+    // Dark Mode Toggle
+    const darkModeToggle = document.createElement('button');
+    darkModeToggle.innerText = 'Toggle Dark Mode';
+    document.body.appendChild(darkModeToggle);
+
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.innerText = 'Switch to Light Mode';
+        } else {
+            darkModeToggle.innerText = 'Switch to Dark Mode';
+        }
+    });
     const videoItems = document.querySelectorAll('.video-item');
     const modal = document.getElementById('video-modal');
     const videoFrame = document.getElementById('video-frame');

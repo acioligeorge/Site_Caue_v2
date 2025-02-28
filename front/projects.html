@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
-<img>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caue Make Up & Hair</title>
@@ -9,48 +9,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/front/src/style.css">
 </head>
 <body>
     <header>
-        <div class="menu-toggle">☰</div> <!-- Ícone de hamburger -->
+        <div class="menu-toggle" aria-label="Abrir menu">☰</div> <!-- Ícone de menu responsivo -->
         <nav class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><img src="assets/logo.png" alt="logo" width=199px height=75% href="index.html"></li>
-                <li><a href="projects.html">Projetos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li>
+                    <a href="/front/index.html">
+                        <img src="/front/src/Images/logo.png" alt="Logo da Caue Make Up & Hair" width="150" height="auto">
+                    </a>
+                </li>
+                <li><a href="/front/index.html">Home</a></li>
+                <li><a href="/front/about.html">Sobre</a></li>
+                <li><a href="/front/projects.html">Projetos</a></li>
+                <li><a href="/back/contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Resto do código aqui -->
-    
+    </div>
+
     <section id="projects">
+        <div class="filter-container">
+            <input type="text" id="search-bar" placeholder="Search videos...">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <option value="category3">Category 3</option>
+            </select>
+        </div>
+
         <h2>Projetos</h2>
         <div class="video-gallery">
-            <div class="video">
+            <div class="video-item" data-category="category1">
                 <iframe src="https://player.vimeo.com/video/296686679" frameborder="0" allowfullscreen></iframe>
                 <p>Descrição do vídeo 1.</p>
             </div>
-            <div class="video">
+            <div class="video-item" data-category="category2">
                 <iframe src="https://player.vimeo.com/video/223159453" frameborder="0" allowfullscreen></iframe>
                 <p>Descrição do vídeo 2.</p>
             </div>
-
-            <div class="video">
+            <div class="video-item" data-category="category3">
                 <iframe src="https://player.vimeo.com/video/296686679" frameborder="0" allowfullscreen></iframe>
                 <p>Descrição do vídeo 3.</p>
             </div>
-            <!-- Adicione mais vídeos conforme necessário -->
+            <!-- Add more video items as needed -->
         </div>
     </section>
-
-
-    <!-- Fim da Seção Galeria de Vídeos -->
-
 
     <!-- Seção Contato -->
     <footer>
@@ -61,3 +69,4 @@
         <p><i class="fab fa-vimeo-v"></i> Vimeo: <a href="https://vimeo.com/cauemaqui">@cauemaqui</a></p>
     </footer>
 </body>
+</html>

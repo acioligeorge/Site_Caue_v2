@@ -1,0 +1,15 @@
+{
+  "name": "caue-makeup-hair",
+  "version": "1.0.0",
+  "description": "A project for Caue Make Up & Hair",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server front"
+  },
+
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}

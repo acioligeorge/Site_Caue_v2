@@ -58,11 +58,11 @@ git checkout -b minha-nova-feature
 
 **3. Commit suas mudanças:**
     ```bash
-git commit -m 'Descrição das mudanças'
+    git commit -m 'Descrição das mudanças'
 
 **4. Envie para o repositório remoto:**
     ```bash
-git push origin minha-nova-feature
+    git push origin minha-nova-feature
 
 **5. Abra um Pull Request.**
 

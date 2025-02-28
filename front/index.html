@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <!-- Custom styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/front/src/style.css">
     
     <!-- Structured data -->
     <script type="application/ld+json">
@@ -52,19 +52,21 @@
         <div class="menu-toggle" aria-label="Abrir menu">☰</div> <!-- Ícone de menu responsivo -->
         <nav class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
                 <li>
-                    <a href="index.html">
-                        <img src="assets/logo.png" alt="Logo da Caue Make Up & Hair" width="199" height="auto">
+                    <a href="/front/index.html">
+                        <img src="/front/src/Images/logo.png alt"Logo da Caue Make Up & Hair" width="150" height="auto">
                     </a>
                 </li>
-                <li><a href="projects.html">Projetos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="/front/index.html">Home</a></li>
+                <li><a href="/front/about.html">Sobre</a></li>
+                <li><a href="/front/projects.html">Projetos</a></li>
+                <li><a href="/back/contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    </div>
+    
     <!-- Vídeo Principal -->
     <div style="padding:56.25% 0 0 0;position:relative;">
         <iframe src="https://player.vimeo.com/video/296684015?h=8d731b8b8b&autoplay=1&muted=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" 
@@ -73,6 +75,8 @@
             allow="autoplay; fullscreen; picture-in-picture" 
             allowfullscreen>
         </iframe>
+    </div>
+        <img src="/front/src/Images/pofile_pic.jpg" alt="Profile Picture" style="width: 100px; height: auto; position: relative;"> <!-- Adicione uma foto sua -->
     </div>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <p><a href="https://vimeo.com/296684015">Nome do Video: Uconnect LIVE / Fiat</a> de <a href="https://vimeo.com/user90595124">BOMBOM</a> em <a href="https://vimeo.com">Vimeo</a>.</p>
@@ -98,7 +102,7 @@
 
             if (menuToggle && menu) {
                 menuToggle.addEventListener('click', function() {
-                    menu.classList.toggle('active');
+                    menu.classList.toggle('show');
                 });
             }
 
