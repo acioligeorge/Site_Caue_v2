@@ -1,0 +1,23 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Database
+instance/
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
