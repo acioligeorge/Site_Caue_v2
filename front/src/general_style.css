@@ -82,6 +82,7 @@ header {
 }
 
 /* === Video Gallery Styles === */
+/* Styles for the video gallery layout and item hover effects */
 .video-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +106,8 @@ header {
     border-radius: 8px;
 }
 
-/* === Seção Contato === */
+/* === Contact Section Styles === */
+/* Styles for the contact section layout and form */
 #contact {
     max-width: 600px;
     margin: 50px auto;
@@ -127,6 +129,7 @@ header {
     margin-bottom: 20px;
     color: #666;
 }
+
 
 /* === Formulário === */
 .contact-form {
@@ -246,6 +249,7 @@ footer a:hover {
 }
 
 /* === Success Message Styles === */
+/* Styles for the success message display after form submission */
 .success-message {
     text-align: center;
     padding: 50px 20px;
@@ -266,6 +270,7 @@ footer a:hover {
 }
 
 /* === About Section Styles === */
+/* Styles for the about section layout and content */
 .about {
     max-width: 800px;
     margin: 50px auto;
@@ -282,6 +287,7 @@ footer a:hover {
     margin-bottom: 20px;
     text-align: justify;
 }
+
 
         header {
             background: #222;

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Caue Make Up & Hair</title>
+    <title>Home - Caue Make Up & Hair</title> <!-- Title of the homepage -->
+
     <!-- Bootstrap and jQuery -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -15,8 +16,12 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul
+        <nav class="menu"> <!-- Navigation menu for the website -->
+
+            <img src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 60px; margin-right: 840px;">
+                                                <!-- Menu Desktop -->
+            <ul> <!-- List of navigation links -->
+
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Sobre</a></li>
                 <li><a href="projects.html">Projetos</a></li>
@@ -35,37 +40,47 @@
     </div>
 </header>
 
-    <!-- Vídeo Principal -->
-    <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe src="https://player.vimeo.com/video/296684015?h=8d731b8b8b&autoplay=1&muted=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" 
+    <!-- Main Video Section -->
+
+    <div style="padding:56.25% 0 0 0;position:relative;"> <!-- Container for responsive video -->
+
+        <div>
+            <iframe src="https://player.vimeo.com/video/296684015?h=8d731b8b8b&autoplay=1&muted=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" 
             style="position:absolute;top:0;left:0;width:100%;height:100%;" 
             frameborder="0" 
             allow="autoplay; fullscreen; picture-in-picture" 
             allowfullscreen>
         </iframe>
+        </div>
+
     </div>
     <div>
-        <img src="src/Images/pofile_pic.jpg" alt="Profile Picture" style="width: 100px; height: auto; position: relative;">
+        <img src="src/Images/pofile_pic.jpg" alt="Profile Picture" style="width: 100px; height: auto; position: adjust; top: 50px; left: 50px;">
     </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script> <!-- Vimeo player API -->
+
     <p><a href="https://vimeo.com/296684015">Nome do Video: Uconnect LIVE / Fiat</a> de <a href="https://vimeo.com/user90595124">BOMBOM</a> em <a href="https://vimeo.com">Vimeo</a>.</p>
 
     <!-- Seção Sobre -->
-    <section id="about">
+    <section id="about"> <!-- About section of the website -->
+
         <h2>Sobre</h2>
         <p>Breve descrição sobre você.</p>
     </section>
     
     <!-- Seção Contato -->
-    <    <footer>
-        <p>&copy; 2024 Caue Make Up & Hair</p>
+    <footer> <!-- Footer section containing contact information -->
+
+        <p>&copy; 2024 Caue Make Up & Hair</p> <!-- Copyright notice -->
+
         <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:cauemaqui@gmail.com">cauemaqui@gmail.com</a></p>
         <p><i class="fas fa-phone-alt"></i> Telefone: <a href="tel:+351123456789">+351 123456789</a></p>
         <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/cauemaqui">@cauemaqui</a></p>
         <p><i class="fab fa-vimeo-v"></i> Vimeo: <a href="https://vimeo.com/cauemaqui">@cauemaqui</a></p>
     </footer>
 
-    <script src="src/script.js"></script>
+    <script src="src/script.js"></script> <!-- Custom JavaScript file for additional functionality -->
+
 
 </body>
 </html>
