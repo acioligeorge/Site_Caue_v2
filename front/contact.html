@@ -16,26 +16,29 @@
 </head>
 <body>
     <header>
-  
-            <nav class="menu"> <!-- Navigation menu for the website -->
+        <nav class="menu"> <!-- Navigation menu for the website -->
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="projects.html">Projetos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="mobile-header">
-            <a href="index.html" class="logo">
-                <img src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 50px;">
-            </a>
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <img src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 60px;">
 
-        </div>
+                                                <!-- Menu Desktop -->
+            <ul> <!-- List of navigation links -->
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mobile-header">
+        <a href="index.html" class="logo">
+            <img src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 50px;">
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </div>
     </header>
 
 
@@ -48,13 +51,17 @@
 
         </div>
 
-        <form class="contact-form" action="/back/send" method="POST"> <!-- Form for submitting contact information -->
+        <form class="contact-form" action="https://formsubmit.co/cfe45b4bf188af2f9da27a25b2be165b " method="POST"> <!-- Form for submitting contact information -->
 
             <input type="hidden" name="_subject" value="Novo Formulário!">
+            <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="sucesso.html">
-            <input type="hidden" name="_cc" value="m.resgate@gmail.com">
+            <input type="hidden" name="_cc" value="cauemaqui@gmail.com">
+            <input type="hidden" name="_next" value="https://acioligeorge.github.io/Site_Caue_v2/front/sucesso.html">
             <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contacto com a Caue Make Up & Hair! Responderemos o mais breve possivel.">
+            
+
+
             
             <div class="form-group">
                 <label for="name">Nome</label> <!-- Label for the name input field -->
