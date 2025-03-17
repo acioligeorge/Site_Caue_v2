@@ -3,55 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Caue Make Up & Hair</title>
-    <meta name="description" content="Conheça a história e a experiência da Caue Make Up & Hair, especialistas em maquiagem e cabelo em Lisboa. Mais de 10 anos de excelência em serviços de beleza.">
-    <meta name="keywords" content="Caue Make Up & Hair, história, experiência, maquiagem profissional, cabelo, Lisboa">
-    <meta name="author" content="Caue Make Up & Hair">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.cauemakeupandhair.com/about.html">
+    <title>Sobre - Caue Make Up & Hair</title> <!-- Title of the About page -->
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.cauemakeupandhair.com/about.html">
-    <meta property="og:title" content="Sobre - Caue Make Up & Hair">
-    <meta property="og:description" content="Conheça a história e a experiência da Caue Make Up & Hair, especialistas em maquiagem e cabelo em Lisboa. Mais de 10 anos de excelência em serviços de beleza.">
-    <meta property="og:image" content="https://www.cauemakeupandhair.com/assets/about-og-image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.cauemakeupandhair.com/about.html">
-    <meta property="twitter:title" content="Sobre - Caue Make Up & Hair">
-    <meta property="twitter:description" content="Conheça a história e a experiência da Caue Make Up & Hair, especialistas em maquiagem e cabelo em Lisboa. Mais de 10 anos de excelência em serviços de beleza.">
-    <meta property="twitter:image" content="https://www.cauemakeupandhair.com/assets/about-og-image.jpg">
-
+    <!-- Bootstrap and jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Link para CSS -->
-    <link rel="stylesheet" href="/front/src/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/general_style.css">
 </head>
 <body>
     <header>
-        <div class="menu-toggle" aria-label="Abrir menu">☰</div> <!-- Ícone de menu responsivo -->
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="/front/index.html">
-                        <img src="/front/src/Images/logo.png alt="Logo da Caue Make Up & Hair" width="150" height="auto">
-                    </a>
-                </li>
-                <li><a href="/front/index.html">Home</a></li>
-                <li><a href="/front/about.html">Sobre</a></li>
-                <li><a href="/front/projects.html">Projetos</a></li>
-                <li><a href="/back/contact.html">Contacto</a></li>
+        <nav class="menu"> <!-- Navigation menu for the website -->
+
+            <img src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 60px;">
+
+                                                <!-- Menu Desktop -->
+            <ul> <!-- List of navigation links -->
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
+    </div>
+    <div class="mobile-header">
+        <a href="index.html" class="logo">
+            <img src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 50px;">
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </div>
     </header>
 
+
     <main>
-        <section id="about" class="about">
-            <h2>Sobre</h2>
-            <p>Sobre a José Aparecido dos Santos, Unipessoal Lda</p>
+        <section id="about" class="about"> <!-- About section of the website -->
+
+            <h2>Sobre</h2> <!-- Heading for the About section -->
+
+            <p>Sobre a José Aparecido dos Santos, Unipessoal Lda</p> <!-- Brief introduction about the company -->
+
             <p>
                 Com sede em Lisboa e mais de 10 anos de trajetória, a José Aparecido dos Santos, Unipessoal Lda, 
                 é uma empresa que se destaca na produção de conteúdos audiovisuais de excelência. Criada em 2014, 
@@ -72,25 +69,18 @@
         </section>
     </main>
 
-    <!-- Seção Contato -->
-    <footer>
-        <p>&copy; 2024 Caue Make Up & Hair</p>
+    <footer> <!-- Footer section containing contact information -->
+
+        <p>&copy; 2024 Caue Make Up & Hair</p> <!-- Copyright notice -->
+
         <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:cauemaqui@gmail.com">cauemaqui@gmail.com</a></p>
         <p><i class="fas fa-phone-alt"></i> Telefone: <a href="tel:+351123456789">+351 123456789</a></p>
         <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/cauemaqui">@cauemaqui</a></p>
         <p><i class="fab fa-vimeo-v"></i> Vimeo: <a href="https://vimeo.com/cauemaqui">@cauemaqui</a></p>
     </footer>
 
-    <!-- Script para menu mobile -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const menu = document.querySelector(".menu ul");
+    <script src="src/script.js"></script> <!-- Custom JavaScript file for additional functionality -->
 
-            menuToggle.addEventListener("click", function () {
-                menu.classList.toggle("show");
-            });
-        });
-    </script>
+
 </body>
 </html>

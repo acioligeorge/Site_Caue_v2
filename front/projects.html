@@ -3,70 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caue Make Up & Hair</title>
-    <!-- Link para o Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Projetos - Caue Make Up & Hair</title> <!-- Title of the projects page -->
+
+    <!-- Bootstrap and jQuery -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/front/src/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/general_style.css">
+    
 </head>
 <body>
     <header>
-        <div class="menu-toggle" aria-label="Abrir menu">☰</div> <!-- Ícone de menu responsivo -->
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="/front/index.html">
-                        <img src="/front/src/Images/logo.png" alt="Logo da Caue Make Up & Hair" width="150" height="auto">
-                    </a>
-                </li>
-                <li><a href="/front/index.html">Home</a></li>
-                <li><a href="/front/about.html">Sobre</a></li>
-                <li><a href="/front/projects.html">Projetos</a></li>
-                <li><a href="/back/contact.html">Contacto</a></li>
+        <nav class="menu"> <!-- Navigation menu for the website -->
+
+            <img src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 60px;">
+
+                                                <!-- Menu Desktop -->
+            <ul> <!-- List of navigation links -->
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+    <div class="mobile-header">
+        <a href="index.html" class="logo">
+            <img src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 50px;">
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </button>
 
     </div>
+    </header>
 
-    <section id="projects">
-        <div class="filter-container">
-            <input type="text" id="search-bar" placeholder="Search videos...">
-            <select id="category-filter">
-                <option value="">All Categories</option>
-                <option value="category1">Category 1</option>
-                <option value="category2">Category 2</option>
-                <option value="category3">Category 3</option>
-            </select>
-        </div>
+    <section id="projects"> <!-- Projects section of the website -->
 
-        <h2>Projetos</h2>
+    <!-- Filtros -->
+    <section class="filters"> <!-- Filters for the video gallery -->
+
+        <input type="text" id="search-bar" placeholder="Pesquisar vídeos...">
+        <select id="category-filter">
+            <option value="">Todas as categorias</option>
+            <option value="categoria1">Categoria 1</option>
+            <option value="categoria2">Categoria 2</option>
+        </select>
+    </section>
+
+        <h2>Projetos</h2> <!-- Heading for the projects section -->
+
         <div class="video-gallery">
-            <div class="video-item" data-category="category1">
-                <iframe src="https://player.vimeo.com/video/296686679" frameborder="0" allowfullscreen></iframe>
-                <p>Descrição do vídeo 1.</p>
+            <div class="video-item" data-category="categoria1">
+                <div class="video-wrapper">
+                    <iframe src="https://player.vimeo.com/video/296686679?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>Descrição do vídeo 1.</p> <!-- Description for video 1 -->
+
             </div>
-            <div class="video-item" data-category="category2">
-                <iframe src="https://player.vimeo.com/video/223159453" frameborder="0" allowfullscreen></iframe>
-                <p>Descrição do vídeo 2.</p>
+            <div class="video-item" data-category="categoria2"> <!-- Video item for category 2 -->
+
+                <div class="video-wrapper">
+                    <iframe src="https://player.vimeo.com/video/223159453?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>Descrição do vídeo 2.</p> <!-- Description for video 2 -->
+
             </div>
-            <div class="video-item" data-category="category3">
-                <iframe src="https://player.vimeo.com/video/296686679" frameborder="0" allowfullscreen></iframe>
-                <p>Descrição do vídeo 3.</p>
+            <div class="video-item" data-category="categoria1"> <!-- Video item for category 1 -->
+
+                <div class="video-wrapper">
+                    <iframe src="https://player.vimeo.com/video/296686679?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>Descrição do vídeo 3.</p> <!-- Description for video 3 -->
+
             </div>
-            <!-- Add more video items as needed -->
         </div>
     </section>
 
-    <!-- Seção Contato -->
-    <footer>
-        <p>&copy; 2024 Caue Make Up & Hair</p>
+    <footer> <!-- Footer section containing contact information -->
+
+        <p>&copy; 2024 Caue Make Up & Hair</p> <!-- Copyright notice -->
+
         <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:cauemaqui@gmail.com">cauemaqui@gmail.com</a></p>
         <p><i class="fas fa-phone-alt"></i> Telefone: <a href="tel:+351123456789">+351 123456789</a></p>
         <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/cauemaqui">@cauemaqui</a></p>
         <p><i class="fab fa-vimeo-v"></i> Vimeo: <a href="https://vimeo.com/cauemaqui">@cauemaqui</a></p>
     </footer>
+
+    <script src="src/script.js"></script> <!-- Custom JavaScript file for additional functionality -->
+
+
 </body>
 </html>

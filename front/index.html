@@ -3,139 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caue Make Up & Hair - Serviços Profissionais de Maquiagem e Cabelo</title>
-    <meta name="description" content="Caue Make Up & Hair oferece serviços profissionais de maquiagem e cabelo para todas as ocasiões. Especialistas em maquiagem para noivas, penteados para eventos e cursos de automaquiagem.">
-    <meta name="author" content="Caue Make Up & Hair">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.cauemakeupandhair.com">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.cauemakeupandhair.com">
-    <meta property="og:title" content="Caue Make Up & Hair - Serviços Profissionais de Maquiagem e Cabelo">
-    <meta property="og:description" content="Serviços profissionais de maquiagem e cabelo para todas as ocasiões. Especialistas em maquiagem para noivas, penteados para eventos e cursos de automaquiagem.">
-    <meta property="og:image" content="https://www.cauemakeupandhair.com/assets/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.cauemakeupandhair.com">
-    <meta property="twitter:title" content="Caue Make Up & Hair - Serviços Profissionais de Maquiagem e Cabelo">
-    <meta property="twitter:description" content="Serviços profissionais de maquiagem e cabelo para todas as ocasiões. Especialistas em maquiagem para noivas, penteados para eventos e cursos de automaquiagem.">
-    <meta property="twitter:image" content="https://www.cauemakeupandhair.com/assets/og-image.jpg">
-    
+    <title>Home - Caue Make Up & Hair</title> <!-- Title of the homepage -->
+
+    <!-- Bootstrap and jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="/front/src/style.css">
-    
-    <!-- Structured data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BeautySalon",
-        "name": "Caue Make Up & Hair",
-        "image": "https://www.cauemakeupandhair.com/assets/logo.png",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Lisboa",
-            "addressCountry": "PT"
-        },
-        "url": "https://www.cauemakeupandhair.com",
-        "telephone": "+351123456789",
-        "priceRange": "$$"
-    }
-    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/general_style.css">
 </head>
 <body>
     <header>
-        <div class="menu-toggle" aria-label="Abrir menu">☰</div> <!-- Ícone de menu responsivo -->
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="/front/index.html">
-                        <img src="/front/src/Images/logo.png alt"Logo da Caue Make Up & Hair" width="150" height="auto">
-                    </a>
-                </li>
-                <li><a href="/front/index.html">Home</a></li>
-                <li><a href="/front/about.html">Sobre</a></li>
-                <li><a href="/front/projects.html">Projetos</a></li>
-                <li><a href="/back/contact.html">Contacto</a></li>
+        <nav class="menu"> <!-- Navigation menu for the website -->
+
+            <img href="/front/index.html" src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 60px; float: left;">
+                                                <!-- Menu Desktop -->
+            <ul> <!-- List of navigation links -->
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+    <div class="mobile-header">
+        <a href="index.html" class="logo">
+            <img src="src/Images/logo.png" alt="Logo da Caue Make Up & Hair" style="height: 50px;">
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </button>
 
     </div>
-    
-    <!-- Vídeo Principal -->
-    <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe src="https://player.vimeo.com/video/296684015?h=8d731b8b8b&autoplay=1&muted=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" 
+    </header>
+
+    <!-- Main Video Section -->
+
+    <div style="padding:56.25% 0 0 0;position:relative;"> <!-- Container for responsive video -->
+
+        <div>
+            <iframe src="https://player.vimeo.com/video/296684015?h=8d731b8b8b&autoplay=1&muted=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" 
             style="position:absolute;top:0;left:0;width:100%;height:100%;" 
             frameborder="0" 
             allow="autoplay; fullscreen; picture-in-picture" 
             allowfullscreen>
         </iframe>
+        </div>
+
     </div>
-        <img src="/front/src/Images/pofile_pic.jpg" alt="Profile Picture" style="width: 100px; height: auto; position: relative;"> <!-- Adicione uma foto sua -->
+    <div>
+        <img src="/front/src/Images/pofile_pic.jpg" alt="Profile Picture" style="width: 100px; height: auto;"> <!-- Corrected profile picture -->
+
     </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <p><a href="https://vimeo.com/296684015">Nome do Video: Uconnect LIVE / Fiat</a> de <a href="https://vimeo.com/user90595124">BOMBOM</a> em <a href="https://vimeo.com">Vimeo</a>.</p>
+    <script src="https://player.vimeo.com/api/player.js"></script> <!-- Vimeo player API -->
+
+    <p><a href="https://vimeo.com/296684015">Nome do Video: Uconnect LIVE / Fiat</a> de <a href="https://vimeo.com/user90595124">BOMBOM</a> em <a href="https://vimeo.com">Vimeo</a>.</p> <!-- Video credit -->
+
 
     <!-- Seção Sobre -->
-    <section id="about">
+    <section id="about"> <!-- About section of the website -->
+
         <h2>Sobre</h2>
         <p>Breve descrição sobre você.</p>
     </section>
     
     <!-- Seção Contato -->
-    <footer>
-        <p>&copy; 2024 Caue Make Up & Hair</p>
+    <footer> <!-- Footer section containing contact information -->
+
+        <p>&copy; 2024 Caue Make Up & Hair</p> <!-- Copyright notice -->
+
         <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:cauemaqui@gmail.com">cauemaqui@gmail.com</a></p>
         <p><i class="fas fa-phone-alt"></i> Telefone: <a href="tel:+351123456789">+351 123456789</a></p>
+        <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/cauemaqui">@cauemaqui</a></p>
+        <p><i class="fab fa-vimeo-v"></i> Vimeo: <a href="https://vimeo.com/cauemaqui">@cauemaqui</a></p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Menu Toggle Responsivo
-            const menuToggle = document.querySelector('.menu-toggle');
-            const menu = document.querySelector('.menu');
-
-            if (menuToggle && menu) {
-                menuToggle.addEventListener('click', function() {
-                    menu.classList.toggle('show');
-                });
-            }
-
-            // Botão de Voltar ao Topo
-            const backToTopButton = document.createElement('button');
-            backToTopButton.id = 'backToTop';
-            backToTopButton.innerHTML = '↑';
-            backToTopButton.style.position = 'fixed';
-            backToTopButton.style.bottom = '20px';
-            backToTopButton.style.right = '20px';
-            backToTopButton.style.display = 'none';
-            backToTopButton.style.padding = '10px 15px';
-            backToTopButton.style.fontSize = '20px';
-            backToTopButton.style.background = '#000';
-            backToTopButton.style.color = '#fff';
-            backToTopButton.style.border = 'none';
-            backToTopButton.style.cursor = 'pointer';
-            backToTopButton.style.borderRadius = '50%';
-            document.body.appendChild(backToTopButton);
-
-            window.onscroll = function() {
-                if (document.documentElement.scrollTop > 100) {
-                    backToTopButton.style.display = 'block';
-                } else {
-                    backToTopButton.style.display = 'none';
-                }
-            };
-
-            backToTopButton.addEventListener('click', function() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        });
-    </script>
-
-</body>
-</html>
+    <script src="src/script.js"></script> <!-- Custom JavaScript file for additional functionality -->
