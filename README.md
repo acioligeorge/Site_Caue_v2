@@ -1,90 +1,40 @@
-# 🎨 Caue Make Up & Hair 💇‍♀️
+# 👩‍💻 Catia Cardoso - Web Developer Portfolio
 
-Bem-vindo ao site oficial do Caue Make Up & Hair! Um espaço criado para mostrar todo o talento do Caue com maquiagem e cabelo, com uma pegada jovem, visualmente atraente e acessível. 🌟
+Bem-vindo ao meu perfil no GitHub! Sou uma desenvolvedora web apaixonada por criar soluções criativas e funcionais. 🌟
 
 ## 📖 Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [✨ Funcionalidades](#funcionalidades)
-- [🚀 Tecnologias Usadas](#tecnologias-usadas)
-- [📦 Como Instalar](#como-instalar)
-- [📂 Estrutura do Projeto](#estrutura-do-projeto)
-- [💡 Contribuindo](#contribuindo)
+- [Sobre Mim](#sobre-mim)
+- [🛠️ Habilidades Técnicas](#habilidades-técnicas)
+- [🚀 Projetos](#projetos)
 - [📬 Contato](#contato)
 
-## 📌 Sobre o Projeto
+## 📌 Sobre Mim
 
-Este é um site dinâmico e responsivo criado para Caue Make Up & Hair. Agora, além de conferir o portfólio e serviços, os clientes podem visualizar vídeos dos projetos, navegar com mais facilidade e acessar um layout otimizado para qualquer dispositivo. Além disso, aprimoramos a comunicação com o backend via `app.py`, garantindo uma experiência mais fluida e interativa.
+Desenvolvedora web com experiência em criar sites responsivos e aplicações web. Meu foco é combinar design atraente com funcionalidades robustas para oferecer a melhor experiência ao usuário.
 
-## ✨ Funcionalidades
+## 🛠️ Habilidades Técnicas
 
-- ✅ Homepage com vídeo de destaque 📹
-- ✅ Modo escuro ativado via JavaScript 🌙
-- ✅ Sobre: Informações sobre a trajetória de Caue 🌠
-- ✅ Projetos: Portfólio e vídeos dos trabalhos realizados 🎞️
-- ✅ Contato: Formulário para contato direto e links para redes sociais 📩
-- ✅ Melhoria na estrutura do código e organização dos arquivos 🗂️
-
-## 🚀 Tecnologias Usadas
-
-Tecnologias e ferramentas que ajudam a dar vida ao site:
+Tecnologias e ferramentas que utilizo:
 
 - ![HTML5](https://img.icons8.com/color/48/000000/html-5.png) HTML5
 - ![CSS3](https://img.icons8.com/color/48/000000/css3.png) CSS3
 - ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) JavaScript
-- ![Python](https://img.icons8.com/color/48/000000/python.png) Python (Flask)
-- ![Vimeo](https://img.icons8.com/color/48/000000/vimeo.png) Vimeo API
-- ![Responsividade](https://img.icons8.com/ios/50/000000/responsive.png) Responsividade 📱
+- ![Python](https://img.icons8.com/color/48/000000/python.png) Python
+- ![Responsividade](https://img.icons8.com/ios/50/000000/responsive.png) Desenvolvimento Responsivo
 
-## 📦 Como Instalar
+## 🚀 Projetos
 
-1️⃣ Clone o repositório:
+Alguns dos meus projetos incluem:
 
-```bash
-git clone https://github.com/usuario/caue-make-up-hair.git
-2️⃣ Navegue até a pasta:
+- **Site Caue Make Up & Hair**: Site profissional para maquiador e cabeleireiro
+- **Admin Dashboard**: Painel administrativo com Python Flask
+- **Portfólio Pessoal**: Meu site pessoal mostrando meus trabalhos
 
-```bash
-cd caue-make-up-hair
-3️⃣ Abra o arquivo index.html em um navegador para ver o site rodando localmente.
+## 📬 Contato
 
-📂 Estrutura do Projeto
-📂 front/
-index.html: Página principal do site
-about.html: Página de informações sobre o Caue
-projects.html: Portfólio atualizado
-contact.html: Página de contato
-style.css: Estilos de design e responsividade
-script.js: Adição do modo escuro e melhorias gerais
-assets/: Imagens, ícones e outros recursos
-📂 back/
-app.py: Arquivo de backend para comunicação e processamento
-💡 Contribuindo
-Quer sugerir melhorias ou adicionar novas funcionalidades? 😃
+Entre em contato comigo através do GitHub ou outros canais:
 
-1️⃣ Faça um fork do projeto.
+🔗 GitHub: [github.com/catiacardoso-dev](https://github.com/catiacardoso-dev)
 
-2️⃣ Crie uma nova branch com suas alterações:
-
-```bash
-git checkout -b minha-nova-feature
-
-```bash
-3️⃣ Faça commit das mudanças:
-
-```bash
-git commit -m 'Descrição das mudanças'
-4️⃣ Envie para o repositório remoto:
-
-```bash
-git push origin minha-nova-feature
-5️⃣ Abra um Pull Request e aguarde o feedback.
-
-📬 Contato
-Para mais informações sobre o projeto ou reportar problemas, entre em contato com:
-
-📧 Desenvolvedor: George Acioli
-📱 Redes Sociais: Instagram | LinkedIn
-
-
-✨ Obrigado por conferir o projeto! ✨
+✨ Obrigado por visitar meu perfil! ✨
